@@ -15,3 +15,6 @@ baris 2
 ```
 
 #### header 4
+1. SSH ke Server
+2. git clone git@github.com:adhithia21/belajar-github-batch-6.git
+3. mv semua file di `belajar-github-batch-6` ke `/var/www/html`
