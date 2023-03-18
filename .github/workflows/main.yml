@@ -12,8 +12,9 @@ jobs:
       run: echo "Ini step untuk build aplikasi"
       
   test:
-    name: text aplikasi
+    name: test aplikasi
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - name: menampilkan text
       run: echo "Ini step untuk testing aplikasi"
@@ -21,6 +22,7 @@ jobs:
   deploy:
     name: deploy aplikasi ke server
     runs-on: ubuntu-latest
+    needs: test
     steps:
     - name: menampilkan text
       run: echo "Ini step untuk deploy aplikasi ke server linux"
